@@ -1,0 +1,172 @@
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav  {
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+  
+  }
+  nav a {
+    padding:1em;
+    min-width: 80px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #f4f4f4;
+    color: #333;
+  
+  }
+  nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+  }
+  nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+  }
+
+.my, a:visited{
+    color: #007bff;
+    text-decoration: none;
+
+}
+
+.my:hover{
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    max-height: 70px;
+}
+
+
+nav .my {
+    margin-left: 20px;
+    top: 0%;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.ddd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e6e6e6;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.ddd-content {
+    text-align: center;
+}
+
+.ddd-image {
+    max-width: 150px;
+    max-height:400px;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.ddd-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.reviews ul {
+    list-style: none;
+    padding: 0;
+}
+
+.upgrades {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.upgrade-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.upgrade-item {
+    text-align: center;
+}
+
+.upgrade-item img {
+    max-width: 100px;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .ddd {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .ddd-content {
+        text-align: left;
+    }
+
+    .ddd-image {
+        max-width: 50%;
+        margin-top: 0;
+    }
+
+    .features {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .reviews, .upgrades {
+        width: 50%;
+    }
+
+    .upgrade-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+   
+}
